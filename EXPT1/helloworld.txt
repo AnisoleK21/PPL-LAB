@@ -1,0 +1,3 @@
+In this program, I used stdio.h as header file.
+I opened int main() function.
+To get output, I used printf() function
