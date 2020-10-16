@@ -67,31 +67,33 @@ if k == 1:
     l = lion()
     l.__init__()
     l.view()
-if k == 2:
+elif k == 2:
     d = dog()
     d.__init__()
     d.view()
-if k == 3:
+elif k == 3:
     c = cat()
     c.__init__()
     c.view()
-if k == 4:
+elif k == 4:
     h = horse()
     h.__init__()
     h.view()
-if k == 5:
+elif k == 5:
     d = donkey()
     d.__init__()
     d.view()
-if k == 6:
+elif k == 6:
     m = monkey()
     m.__init__()
     m.view()
-if k == 7:
+elif k == 7:
     s = sparrow()
     s.__init__()
     s.view()
-if k == 8:
+elif k == 8:
     o = owl()
     o.__init__()
     o.view()
+else:
+    print("Wrong choice!")
