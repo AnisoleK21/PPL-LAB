@@ -1,0 +1,72 @@
+swap (int & first, int & second)
+{
+  int temp;
+
+  temp = *first;
+  _1 = *second;
+  *first = _1;
+  *second = temp;
+}
+
+
+main ()
+{
+  int D.41955;
+
+  {
+    int a;
+    int b;
+
+    try
+      {
+        a = 2;
+        b = 3;
+        swap (&a, &b);
+        a.0_1 = a;
+        _2 = std::basic_ostream<char>::operator<< (&cout, a.0_1);
+        _3 = std::operator<< <std::char_traits<char> > (_2, " ");
+        b.1_4 = b;
+        std::basic_ostream<char>::operator<< (_3, b.1_4);
+        D.41955 = 0;
+        return D.41955;
+      }
+    finally
+      {
+        a = {CLOBBER};
+        b = {CLOBBER};
+      }
+  }
+  D.41955 = 0;
+  return D.41955;
+}
+
+
+__static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  if (__initialize_p == 1) goto <D.41962>; else goto <D.41963>;
+  <D.41962>:
+  if (__priority == 65535) goto <D.41964>; else goto <D.41965>;
+  <D.41964>:
+  std::ios_base::Init::Init (&__ioinit);
+  atexit (__tcf_0);
+  goto <D.41966>;
+  <D.41965>:
+  <D.41966>:
+  goto <D.41967>;
+  <D.41963>:
+  <D.41967>:
+}
+
+
+__tcf_0 ()
+{
+  std::ios_base::Init::~Init (&__ioinit);
+}
+
+
+_GLOBAL__sub_I__Z4swapRiS_ ()
+{
+  __static_initialization_and_destruction_0 (1, 65535);
+}
+
+
